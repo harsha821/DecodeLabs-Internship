@@ -6,7 +6,7 @@ This project focuses on transforming raw and incomplete e-commerce transaction d
 
 The final dataset is optimized for predictive analytics, business intelligence, and machine learning applications.
 
-
+---
 
 ## Project Objectives
 
@@ -16,7 +16,7 @@ The final dataset is optimized for predictive analytics, business intelligence, 
 * Perform statistical analysis and exploratory data preparation.
 * Generate a clean dataset suitable for machine learning models.
 
-
+---
 
 ## Business Problem
 
@@ -24,7 +24,7 @@ E-commerce datasets often contain missing values, inconsistencies, and extreme o
 
 This project addresses these challenges by implementing a complete preprocessing pipeline that converts raw transactional data into a high-quality dataset suitable for predictive modeling and business intelligence applications.
 
-
+---
 
 ## Dataset Information
 
@@ -51,7 +51,7 @@ This project addresses these challenges by implementing a complete preprocessing
 * ReferralSource
 * TotalPrice
 
-
+---
 
 ## Technologies Used
 
@@ -61,7 +61,7 @@ This project addresses these challenges by implementing a complete preprocessing
 * Scikit-Learn
 * OpenPyXL
 
-
+---
 
 ## Data Preprocessing
 
@@ -86,7 +86,7 @@ Example:
 df["Quantity"] = df["Quantity"].fillna(
     df["Quantity"].mean()
 )
-`
+```
 
 #### Mode Imputation
 
@@ -103,7 +103,7 @@ Example:
 df["CouponCode"] = df["CouponCode"].fillna(
     df["CouponCode"].mode()[0]
 )
-
+```
 
 #### KNN Imputation
 
@@ -122,7 +122,7 @@ imputer = KNNImputer(n_neighbors=5)
 
 KNN imputation preserves relationships between variables and often produces more accurate estimates than simple statistical methods.
 
-
+---
 
 ## Outlier Detection and Treatment
 
@@ -145,6 +145,7 @@ Values outside the acceptable range were capped to reduce the influence of extre
 * Prevents skewed statistical results
 * Enhances prediction accuracy
 
+---
 
 ## Feature Engineering
 
@@ -173,7 +174,7 @@ Binary feature indicating whether a coupon was applied.
 ```python
 1 = Coupon Used
 0 = Coupon Not Used
-
+```
 
 ### OrderMonth
 
@@ -183,7 +184,7 @@ Extracted from the Date column to capture seasonal purchasing patterns.
 
 Extracted from the Date column to support long-term trend analysis.
 
-
+---
 
 ## Exploratory Data Analysis (EDA)
 
@@ -215,9 +216,9 @@ Example:
 
 ```python
 df.describe()
+```
 
-
-
+---
 
 ## Machine Learning Readiness
 
@@ -238,7 +239,7 @@ The final dataset can be directly used for:
 * Customer Segmentation
 * Sales Forecasting
 
-
+---
 
 ## Output
 
@@ -250,7 +251,7 @@ Final_ML_Ready_Dataset.xlsx
 
 This dataset is ready for analytics and machine learning workflows.
 
-
+---
 
 ## Project Workflow
 
@@ -266,7 +267,7 @@ This dataset is ready for analytics and machine learning workflows.
 10. Generate Statistical Summary
 11. Export ML-Ready Dataset
 
-
+---
 
 ## Results
 
@@ -283,4 +284,3 @@ This dataset is ready for analytics and machine learning workflows.
 ✔ Enhanced suitability for predictive analytics and business decision-making
 
 ---
-
